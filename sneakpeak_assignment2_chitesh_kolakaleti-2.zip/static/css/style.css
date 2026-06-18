@@ -1,0 +1,95 @@
+body {
+  background-color: #f8f9fa;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navbar shadow */
+.navbar {
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Card styling */
+.card,
+.product-card {
+  background-color: white;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: 0.3s ease-in-out;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card:hover,
+.product-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+}
+
+/* Image fitting on product grid */
+.product-image {
+  width: 50%;
+  height: 330px;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
+  transition: transform 0.3s ease;
+}
+
+/* Footer area inside each product card */
+.product-footer {
+  padding: 15px;
+  text-align: center;
+  flex-grow: 1;
+}
+
+/* Button styling */
+.btn {
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+/* Hero banner on homepage */
+.hero,
+.hero-banner {
+  background: linear-gradient(to right, #000000, #434343);
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+  border-radius: 12px;
+  margin-bottom: 40px;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.hero-banner h1 {
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+
+.hero-banner p {
+  font-size: 1.2rem;
+}
+
+.btn-hero {
+  margin-top: 20px;
+  font-size: 1rem;
+  padding: 10px 25px;
+  border-radius: 25px;
+}
+
+/* Footer styles */
+footer {
+  background-color: #222;
+  color: #ccc;
+  padding: 30px 0;
+  margin-top: 50px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
